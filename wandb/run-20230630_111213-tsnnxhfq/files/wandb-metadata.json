@@ -1,0 +1,365 @@
+{
+    "os": "Linux-5.15.0-71-generic-x86_64-with-glibc2.17",
+    "python": "3.8.13",
+    "heartbeatAt": "2023-06-30T09:12:14.112823",
+    "startedAt": "2023-06-30T09:12:13.347686",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/Arksyd96/brain_denoising_diffusion_model.git",
+        "commit": "f85b639de263f5f8f9adb7ee0ae612fb6fab7aa9"
+    },
+    "email": "aghiles.kebaili.1998@gmail.com",
+    "root": "/home/aghiles/deeplearning/brain_denoising_diffusion_model",
+    "host": "QUANTIF64",
+    "username": "aghiles",
+    "executable": "/home/aghiles/anaconda3/envs/work/bin/python",
+    "cpu_count": 32,
+    "cpu_count_logical": 64,
+    "cpu_freq": {
+        "current": 2054.137890625,
+        "min": 800.0,
+        "max": 3200.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 822.997,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3200.0
+        }
+    ],
+    "disk": {
+        "total": 468.2823791503906,
+        "used": 39.655540466308594
+    },
+    "gpu": "NVIDIA RTX A6000",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA RTX A6000",
+            "memory_total": 51527024640
+        }
+    ],
+    "memory": {
+        "total": 251.51843643188477
+    }
+}

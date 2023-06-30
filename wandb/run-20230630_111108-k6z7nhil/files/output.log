@@ -1,0 +1,89 @@
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Dataset already exists at ./data/brats_preprocessed.npy
+Loading dataset from npy file...
+Train shape: torch.Size([500, 2, 128, 128])
+Test shape: torch.Size([0, 2, 128, 128])
+Min: -1.0, Max: 1.0
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name               | Type            | Params
+-------------------------------------------------------
+0 | diffusion          | DiffusionModule | 0
+1 | in_conv            | Conv2d          | 2.4 K
+2 | positional_encoder | Sequential      | 328 K
+3 | encoder            | ModuleList      | 18.8 M
+4 | bottleneck         | EncodingBlock   | 11.0 M
+5 | decoder            | ModuleList      | 28.3 M
+6 | out_conv           | Sequential      | 5.1 K
+-------------------------------------------------------
+58.6 M    Trainable params
+0         Non-trainable params
+58.6 M    Total params
+234.215   Total estimated model params size (MB)
+
+
+
+
+Epoch 0:  97%|███████████████████████████████████████████████████████████████████████████████████████████████████████▋   | 31/32 [00:12<00:00,  2.51it/s, v_num=nhil, mse_loss_step=0.590]
+Traceback (most recent call last):
+  File "main.py", line 98, in <module>
+    trainer.fit(model=model, datamodule=datamodule)
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 520, in fit
+    call._call_and_handle_interrupt(
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/trainer/call.py", line 44, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 559, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 935, in _run
+    results = self._run_stage()
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 978, in _run_stage
+    self.fit_loop.run()
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/loops/fit_loop.py", line 201, in run
+    self.advance()
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/loops/fit_loop.py", line 354, in advance
+    self.epoch_loop.run(self._data_fetcher)
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/loops/training_epoch_loop.py", line 133, in run
+    self.advance(data_fetcher)
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/loops/training_epoch_loop.py", line 218, in advance
+    batch_output = self.automatic_optimization.run(trainer.optimizers[0], kwargs)
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 185, in run
+    self._optimizer_step(kwargs.get("batch_idx", 0), closure)
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 261, in _optimizer_step
+    call._call_lightning_module_hook(
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/trainer/call.py", line 142, in _call_lightning_module_hook
+    output = fn(*args, **kwargs)
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/core/module.py", line 1265, in optimizer_step
+    optimizer.step(closure=optimizer_closure)
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/core/optimizer.py", line 158, in step
+    step_output = self._strategy.optimizer_step(self._optimizer, closure, **kwargs)
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/strategies/strategy.py", line 224, in optimizer_step
+    return self.precision_plugin.optimizer_step(optimizer, model=model, closure=closure, **kwargs)
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/plugins/precision/precision_plugin.py", line 114, in optimizer_step
+    return optimizer.step(closure=closure, **kwargs)
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/torch/optim/lr_scheduler.py", line 69, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/torch/optim/optimizer.py", line 33, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/torch/optim/adamw.py", line 148, in step
+    loss = closure()
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/plugins/precision/precision_plugin.py", line 101, in _wrap_closure
+    closure_result = closure()
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 140, in __call__
+    self._result = self.closure(*args, **kwargs)
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 126, in closure
+    step_output = self._step_fn()
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 308, in _training_step
+    training_step_output = call._call_strategy_hook(trainer, "training_step", *kwargs.values())
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/trainer/call.py", line 288, in _call_strategy_hook
+    output = fn(*args, **kwargs)
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/strategies/strategy.py", line 366, in training_step
+    return self.model.training_step(*args, **kwargs)
+  File "/home/aghiles/deeplearning/brain_denoising_diffusion_model/modules/ddpm.py", line 99, in training_step
+    x_t, noise = self.diffusion.forward_process(x_0, times)
+  File "/home/aghiles/deeplearning/brain_denoising_diffusion_model/modules/diffusion.py", line 24, in forward_process
+    return torch.sqrt(alpha_hat) * images + torch.sqrt(1 - alpha_hat) * gamma, noise
+RuntimeError: The size of tensor a (16) must match the size of tensor b (4) at non-singleton dimension 0

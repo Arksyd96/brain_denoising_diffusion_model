@@ -1,0 +1,63 @@
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Dataset already exists at ./data/brats_preprocessed.npy
+Loading dataset from npy file...
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name               | Type            | Params
+-------------------------------------------------------
+0 | diffusion          | DiffusionModule | 0
+1 | in_conv            | Conv2d          | 2.4 K
+2 | positional_encoder | Sequential      | 328 K
+3 | encoder            | ModuleList      | 18.8 M
+4 | bottleneck         | EncodingBlock   | 11.0 M
+5 | decoder            | ModuleList      | 28.3 M
+6 | out_conv           | Sequential      | 5.1 K
+-------------------------------------------------------
+58.6 M    Trainable params
+0         Non-trainable params
+58.6 M    Total params
+234.215   Total estimated model params size (MB)
+Train shape: torch.Size([500, 2, 128, 128])
+Test shape: torch.Size([0, 2, 128, 128])
+Min: -1.0, Max: 1.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 4:  94%|██████████████████████████████████████████████████████████████████████████████▌     | 29/31 [00:06<00:00,  4.52it/s, v_num=xhfq, mse_loss_step=0.0969, mse_loss_epoch=0.163]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 7:   6%|█████▌                                                                                | 2/31 [00:00<00:10,  2.64it/s, v_num=xhfq, mse_loss_step=0.110, mse_loss_epoch=0.109]
+/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/trainer/call.py:54: UserWarning: Detected KeyboardInterrupt, attempting graceful shutdown...
+  rank_zero_warn("Detected KeyboardInterrupt, attempting graceful shutdown...")

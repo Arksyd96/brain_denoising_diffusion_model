@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "main.py", line 85, in <module>
+    trainer = pl.Trainer(
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/utilities/argparse.py", line 69, in insert_env_defaults
+    return fn(self, **kwargs)
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 393, in __init__
+    self._accelerator_connector = _AcceleratorConnector(
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py", line 157, in __init__
+    self._set_parallel_devices_and_init_accelerator()
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py", line 394, in _set_parallel_devices_and_init_accelerator
+    self._devices_flag = accelerator_cls.parse_devices(self._devices_flag)
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/pytorch_lightning/accelerators/cuda.py", line 80, in parse_devices
+    return _parse_gpu_ids(devices, include_cuda=True)
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/lightning_fabric/utilities/device_parser.py", line 104, in _parse_gpu_ids
+    return _sanitize_gpu_ids(gpus, include_cuda=include_cuda, include_mps=include_mps)
+  File "/home/aghiles/anaconda3/envs/work/lib/python3.8/site-packages/lightning_fabric/utilities/device_parser.py", line 136, in _sanitize_gpu_ids
+    raise MisconfigurationException(
+lightning_fabric.utilities.exceptions.MisconfigurationException: You requested gpu: [0, 1, 2, 3]
+ But your machine only has: [0]
